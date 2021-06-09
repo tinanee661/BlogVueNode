@@ -9,7 +9,9 @@
                 <p >Hello World</p>
                 <h3>Local Directive</h3>
                 <p>{{text | toUpperCase | to-lowercase}}</p> -->
-        <router-view></router-view>
+        <div style="min-height: 541px;">
+            <router-view></router-view>
+        </div>
         
         <app-Footer-Admin v-if="this.$store.getters.getRole == 'admin'"></app-Footer-Admin>
         <app-Footer-U v-else-if="this.$store.getters.getRole == 'user'"></app-Footer-U>

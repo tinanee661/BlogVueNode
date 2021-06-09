@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container login">
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
@@ -98,3 +98,12 @@ export default {
 };
 
 </script>
+
+<style lang="css" scoped>
+  .login {
+    display: flex;
+    flex-direction: column;
+    min-height: 540px;
+    justify-content: center;
+  }
+</style>
