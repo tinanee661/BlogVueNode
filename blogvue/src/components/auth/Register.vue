@@ -96,6 +96,8 @@ export default {
               displayName: this.form.name
             })
             .then(() => {});
+
+          this.$router.push({name: 'home'})
         })
         .catch(err => {
           this.error = err.message;
